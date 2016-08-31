@@ -11,7 +11,7 @@
   <!-- Projects -->
   
   <!-- Athene -->
-  <project path="build" name="Nougat-Athene/android_build" remote="github" revision="nougat-7.0" >
+  <project path="build" name="Nougat-Athene/android_build" remote="github" revision="nougat-7.0-clean" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   
@@ -19,7 +19,7 @@
   <project path="kernel/motorola/msm8952" name="Nougat-Athene/android_kernel_motorola_msm8952" remote="github" revision="nougat-7.0" />
   
   <!-- Device Tree -->    
-  <project path="device/motorola/athene" name="Nougat-Athene/android_device_motorola_athene" remote="github" revision="nougat-7.0" />
+  <project path="device/motorola/athene" name="Nougat-Athene/android_device_motorola_athene" remote="github" revision="nougat-7.0-clean" />
 
   <!-- Vendor Repo -->    
   <project path="vendor/motorola" name="Nougat-Athene/proprietary_vendor_motorola" remote="github" revision="cm-13.0" />
