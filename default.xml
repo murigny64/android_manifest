@@ -27,8 +27,11 @@
   <!-- Qcom Common -->
   <project path="device/qcom/common" name="Nougat-Athene/android_device_qcom_common" remote="github" revision="nougat-7.0" />    
 
-  <!-- qcom sepolicy -->
+  <!-- Qcom Sepolicy -->
   <project path="device/qcom/sepolicy" name="Nougat-Athene/android_device_qcom_sepolicy" remote="github" revision="nougat-7.0" />
+
+  <!-- Qcom vendor stuff -->
+  <project path="vendor/qcom/opensource/wlan/prima" name="Nougat-Athene/platform_vendor_qcom-opensource_wlan_prima" remote="github" revision="nougat-7.0" />
 
   <!-- External Libs -->
   <project path="external/bson" name="Cyanogenmod/android_external_bson" remote="github" revision="cm-13.0" />
@@ -522,7 +525,6 @@
   <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="d9dfe8c565c9a0324e682fdad06961b22420c14b" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" revision="5dccbab946b999207ff3ceb3ac5f3afea6669775" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="6efa6a5100fb0401a02f4df40b98c495a240ce33" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="dcef2d77075809e82029c6d21fbd452f0f7fc789" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="9b3539ac9eee2a7728c5d47b841ca7fcb398b87c" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32" revision="91ab67c4721de7a5bc847e1b14611a32f882b3e7" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="platform/vendor/qcom/tellurium_64" path="device/qcom/msm8952_64" revision="415887b29f66613aacd05f14f9e43b2b809d96be" upstream="LA.BR.1.3.6_rb1.3"/>
