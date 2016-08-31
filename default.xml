@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  
+  <!-- Remotes -->
   <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
+
+  <remote fetch="https://github.com" name="github" />
+  
   <default remote="caf" revision="LA.BR.1.3.6_rb1.3"/>
+  
+  <!-- Projects -->
+  
+  <!-- Athene -->
+  <project path="build" name="Nougat-Athene/platform_build" remote="github" revision="nougat-7.0" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  
+  <!-- Kernel -->
+  <project path="kernel/motorola/msm8952" name="Nougat-Athene/android_kernel_motorola_msm8952" remote="github" revision="nougat-7.0" />
+  
+  <!-- Device Tree -->    
+  <project path="device/motorola/athene" name="Nougat-Athene/android_device_motorola_athene" remote="github" revision="nougat-7.0" />
+
+  <!-- Vendor Repo -->    
+  <project path="vendor/motorola" name="Nougat-Athene/proprietary_vendor_motorola" remote="github" revision="cm-13.0" />
+    
+  <!-- Qcom Common -->
+  <project path="device/qcom/common" name="Nougat-Athene/android_device_qcom_common" remote="github" revision="nougat-7.0" />    
+
+  <!-- qcom sepolicy -->
+  <project path="device/qcom/sepolicy" name="Nougat-Athene/android_device_qcom_sepolicy" remote="github" revision="nougat-7.0" />
+
+  <!-- External Libs -->
+  <project path="external/bson" name="Cyanogenmod/android_external_bson" remote="github" revision="cm-13.0" />
+  <project path="external/stlport" name="Cyanogenmod/android_external_stlport" remote="github" revision="cm-13.0" />
+  <project path="external/skia" name="Cyanogenmod/android_external_skia" remote="github" revision="cm-13.0" />
+  
+  
+  <!-- Code Aurora Forums -->
   <project groups="pdk-cw-fs,pdk-fs" name="device/common" revision="762617a12642c9de3e3ce66b26f6c8b122c06e0f" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="device/generic/arm64" revision="59076b7c5c52c55f7b88042788ee231524370533" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="device/generic/armv7-a-neon" revision="3c5405c44ea987387d3b0c2d2abf69131836c52b" upstream="LA.BR.1.3.6_rb1.3"/>
@@ -18,21 +53,12 @@
   <project groups="device,pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="device,fugu,broadcom_pdk,generic_fs,pdk" name="device/google/atv" revision="c7fb0790d0503ffd902d720cfe9b44acf7f2a5bb" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="device,marlin" name="device/google/contexthub" revision="fe673380aeae5fabbe3ec981f2f3aaadc578d588" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project name="device/qcom/common" revision="c859b7b30fbff7d70389130777287c0c0337a157" upstream="LA.BR.1.3.6_rb1.3">
-    <copyfile dest="build.sh" src="build.sh"/>
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-  <project name="device/qcom/sepolicy" revision="04ae2ddd89796d0969771f807d1c3584519318cf" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="device/sample" revision="77913777dd8aa4866dd237fc08e07d66a0262643" upstream="LA.BR.1.3.6_rb1.3"/>
   <project name="kernel/lk" path="bootable/bootloader/lk" revision="07777d7354fe02aacc2012e6c86f7d3c39479752" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project name="kernel/msm-3.10" path="kernel" revision="891fe15d078ec0904317684873f327b9c6beb684" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="36b381298a4efb7c293d394d8b1acbda68230989" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/art" path="art" revision="d99a543e6205bce8380bf7d67d22ed9557fc22f7" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/bionic" path="bionic" revision="0ca32a954f09c5eca1afd9b009389e10a88d3537" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="5c81cc1181ed7ae7d04b77ee23c6daddce6839af" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project groups="pdk" name="platform/build" path="build" revision="9ad9d8d0a36d0c7801ec60e9629a0eed45c7fe67" upstream="LA.BR.1.3.6_rb1.3">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="41a4f8811495a0a3e260ac7342cf255c33c2005b" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati" revision="0d8f6ef0c3652de4a4b18dfa8f9b012781140ba4" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" revision="41c706e42812e6562cea600849b1c12f86c77809" upstream="LA.BR.1.3.6_rb1.3">
@@ -257,7 +283,6 @@
   <project groups="pdk" name="platform/external/selinux" path="external/selinux" revision="d922fef84424ad3bba2e2f3fbd592cc51319b4ba" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" revision="61657b2d87b88576ab1b7d7fb5768b0e315c9216" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/shflags" path="external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project groups="pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" revision="662baab7cdb7f65ef3794d9985a50fe4ca954474" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/sl4a" path="external/sl4a" revision="4dd2f3370586d74013654abee7def8c542eecc2d" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/slf4j" path="external/slf4j" revision="037a293cd09178f946d5df43e8dff1ad8758c163" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/smali" path="external/smali" revision="edc88aff44ff80f969df61725a992680cd0c464c" upstream="LA.BR.1.3.6_rb1.3"/>
