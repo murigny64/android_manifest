@@ -21,6 +21,9 @@
   <!-- Device Tree -->    
   <project path="device/motorola/athene" name="Nougat-Athene/android_device_motorola_athene" remote="github" revision="nougat-7.0" />
 
+  <!-- libcore -->
+  <project path="libcore" name="platform/libcore" remote="github" revision="nougat-7.0" />
+
   <!-- Vendor Repo -->    
   <project path="vendor/motorola" name="Nougat-Athene/proprietary_vendor_motorola" remote="github" revision="cm-13.0" />
     
@@ -375,7 +378,6 @@
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="d625f463d43fefe3e6acc4bf731dd2a967b50e59" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="a472a38b37ea12e42137a8484ccd20bba6ed1d39" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/hardware/ril" path="hardware/ril" revision="6600951e5229afdc3b9550aaeabc537c31cfd543" upstream="LA.BR.1.3.6_rb1.3"/>
-  <project groups="pdk" name="platform/libcore" path="libcore" revision="07fb88f4e47d788004c39d9aea977fb0234bfeb9" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" revision="ff4323214ea24e67cdbd4a7f2445af48d90da342" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="generic_fs" name="platform/ndk" path="ndk" revision="f255acd92116b49634093282def8801e7b5e3261" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="2be2de8a77c1afd4b23a5fdfb5acf16541c6670f" upstream="LA.BR.1.3.6_rb1.3"/>
