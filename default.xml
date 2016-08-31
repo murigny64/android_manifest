@@ -11,7 +11,7 @@
   <!-- Projects -->
   
   <!-- Athene -->
-  <project path="build" name="Nougat-Athene/platform_build" remote="github" revision="nougat-7.0" >
+  <project path="build" name="Nougat-Athene/android_build" remote="github" revision="nougat-7.0" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   
@@ -34,7 +34,7 @@
   <project path="device/qcom/sepolicy" name="Nougat-Athene/android_device_qcom_sepolicy" remote="github" revision="nougat-7.0" />
 
   <!-- Qcom vendor stuff -->
-  <project path="vendor/qcom/opensource/wlan/prima" name="Nougat-Athene/platform_vendor_qcom-opensource_wlan_prima" remote="github" revision="nougat-7.0" />
+  <project path="vendor/qcom/opensource/wlan/prima" name="Nougat-Athene/android_vendor_qcom-opensource_wlan_prima" remote="github" revision="nougat-7.0" />
 
   <!-- External Libs -->
   <project path="external/bson" name="Cyanogenmod/android_external_bson" remote="github" revision="cm-13.0" />

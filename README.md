@@ -1,4 +1,4 @@
-CAF based AOSP for Moto G4 (Athene)
+AOSP for Moto G4 Plus (Athene)
 ===========
 
 Getting Started
@@ -9,9 +9,8 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the CAF AOSP trees, use a command like this:
 
-    repo init -u https://github.com/Nougat-Athene/platform_manifest.git -b LA.BR.1.3.6_rb1.3
+```repo init -u https://github.com/Nougat-Athene/android__manifest.git -b LA.BR.1.3.6_rb1.3```
 
 Then to sync up:
 
-    repo sync
-
+```repo sync -f -c --force-sync -j64 --no-tags --no-clone-bundle```
