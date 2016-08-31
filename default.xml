@@ -40,7 +40,6 @@
   <project path="external/bson" name="Cyanogenmod/android_external_bson" remote="github" revision="cm-13.0" />
   <project path="external/stlport" name="Cyanogenmod/android_external_stlport" remote="github" revision="cm-13.0" />
   <project path="external/skia" name="Cyanogenmod/android_external_skia" remote="github" revision="cm-13.0" />
-  <project groups="pdk" path="external/icu" name="Nougat-Athene/android_external_icu" revision="nougat-7.0" />
   
   
   <!-- Code Aurora Forums -->
@@ -166,6 +165,7 @@
   <project groups="pdk" name="platform/external/hamcrest" path="external/hamcrest" revision="f31b2fcfcfba4a5c6d13a4a2147567c08c72b034" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="e9f6b1c7f914c87661cecd99f954204a4415e0d4" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="d7759006d2d024a83fca1a14d665633edf926ff0" upstream="LA.BR.1.3.6_rb1.3"/>
+  <project groups="pdk" name="platform/external/icu" path="external/icu" revision="2ad8d4ea059551079547e59acaa30db2a2a8f1c2" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/iproute2" path="external/iproute2" revision="8b8d0a8ed4dd35291e751b18928df54e797b184e" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="8116a3ddb08abf5f996a12c11b389dc814714f84" upstream="LA.BR.1.3.6_rb1.3"/>
   <project groups="pdk" name="platform/external/iptables" path="external/iptables" revision="ab25355e52f24fb3f40d131592ae364438ae1721" upstream="LA.BR.1.3.6_rb1.3"/>
