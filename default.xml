@@ -21,8 +21,42 @@
 
 <!-- End Remotes -->
 
- 
-<!-- Projects -->
+
+<!-- Begin Athene -->
+
+  <!-- Build System -->
+  <project path="build" name="android_build" remote="athene" revision="nougat-7.0-clean" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  
+  <!-- Kernel Source -->
+  <project path="kernel" name="android_kernel_motorola_msm8952" remote="athene" />
+  
+  <!-- Device Tree -->    
+  <project path="device/motorola/athene" name="android_device_motorola_athene" remote="athene" revision="nougat-7.0-clean" />
+
+  <!-- Vendor Repo -->    
+  <project path="vendor/motorola" name="proprietary_vendor_motorola" remote="athene" revision="cm-13.0" />
+    
+  <!-- Qcom Common -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="athene" />    
+
+  <!-- Qcom Sepolicy -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="athene" />
+
+  <!-- Qcom vendor stuff -->
+  <project path="vendor/qcom/opensource/wlan/prima" name="android_vendor_qcom-opensource_wlan_prima" remote="athene" />
+
+<!-- End Athene -->
+
+<!-- Begin CyanogenMod -->
+
+  <!-- External Libs -->
+  <project path="external/bson" name="Cyanogenmod/android_external_bson" remote="github" revision="cm-13.0" />
+  <project path="external/stlport" name="Cyanogenmod/android_external_stlport" remote="github" revision="cm-13.0" />
+  <project path="external/skia" name="Cyanogenmod/android_external_skia" remote="github" revision="cm-13.0" />
+
+<!-- End CyanogenMod -->
  
 <!-- Begin Code Aurora Forums -->
 
@@ -42,18 +76,12 @@
   <project name="device/google/accessory/demokit" path="device/google/accessory/demokit" />
   <project name="device/google/atv" path="device/google/atv" />
   <project name="device/google/contexthub" path="device/google/contexthub" />
-  <project name="device/qcom/common" path="device/qcom/common" />
-  <project name="device/qcom/sepolicy" path="device/qcom/sepolicy" />
   <project name="device/sample" path="device/sample" />
   <project name="kernel/lk" path="bootable/bootloader/lk" />
-  <project name="kernel/msm-3.10" path="kernel" />
   <project name="platform/abi/cpp" path="abi/cpp" />
   <project name="platform/art" path="art" />
   <project name="platform/bionic" path="bionic" />
   <project name="platform/bootable/recovery" path="bootable/recovery" />
-  <project name="platform/build" path="build" >
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
   <project name="platform/build/blueprint" path="build/blueprint" />
   <project name="platform/build/kati" path="build/kati" />
   <project name="platform/build/soong" path="build/soong" />
@@ -275,7 +303,6 @@
   <project name="platform/external/selinux" path="external/selinux" />
   <project name="platform/external/sfntly" path="external/sfntly" />
   <project name="platform/external/shflags" path="external/shflags" />
-  <project name="platform/external/skia" path="external/skia" />
   <project name="platform/external/sl4a" path="external/sl4a" />
   <project name="platform/external/slf4j" path="external/slf4j" />
   <project name="platform/external/smali" path="external/smali" />
@@ -515,7 +542,6 @@
   <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" />
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service" />
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" />
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
   <project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32" />
