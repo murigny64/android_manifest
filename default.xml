@@ -5,7 +5,15 @@
   
   <remote fetch="git://codeaurora.org/quic/la" 
           name="caf" 
+          revision="LA.BR.1.3.6_rb1.3"
           review="codeaurora.org" />
+
+  <remote fetch="https://github.com/Nougat-Athene"
+          name="athene" 
+          revision="refs/heads/nougat-7.0" />
+
+  <remote fetch="https://github.com"
+          name="github" />
 
   <default remote="caf"
            sync-c="true"
