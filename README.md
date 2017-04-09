@@ -9,7 +9,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the CAF AOSP trees, use a command like this:
 
-```repo init -u https://github.com/Nougat-Athene/android_manifest.git -b nougat-7.0```
+```repo init -u https://github.com/Nougat-Athene/android_manifest.git -b nougat-7.1```
 
 Then to sync up:
 
